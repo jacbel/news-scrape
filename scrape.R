@@ -9,4 +9,5 @@ req <- request("https://newsapi.org/v2/everything") |>
   )
 
 dir.create('data', showWarnings = FALSE)
+cat('querying API')
 req_perform(req, path = paste0("data/", date, ".json"))
